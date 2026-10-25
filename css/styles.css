@@ -1,0 +1,246 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Boogaloo&family=Damion&family=Henny+Penny&family=IM+Fell+French+Canon:ital@0;1&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/1200x/f8/b1/19/f8b119a6060b3493b6add0572c273793.jpg);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    background-attachment: scroll;
+    
+    /* Hacemos que el body centre todo su contenido automáticamente */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.titulo {
+    text-align: center;
+    color: brown;
+    font-family: "Damion", cursive;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 50px;
+    width: 90%;           /* Ocupa el 90% disponible, adaptándose a cualquier pantalla */
+    max-width: 1000px;    /* Límite para que no se expanda de más */
+    font-size: 35px;
+    margin-left: 120px;
+}
+
+.pa1 {
+    margin-top: 20px;
+    text-align: center;
+    font-family: "IM Fell French Canon", serif;
+    font-weight: 400;
+    font-style: normal;
+    width: 85%;           /* Adaptable al ancho de la pantalla */
+    max-width: 1200px;     /* Límite máximo ordenado */
+    font-size: 20px;
+    margin-right: auto;
+    margin-left: 200px;
+}
+
+.kotonita {
+    margin-top: -400px;
+    display: inline-block; 
+    cursor: pointer;          
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.kotonita:hover {
+    transform: scale(1.1) rotate(3deg);
+}
+
+.btn-volver {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #8b0000;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    transition: background 0.3s ease;
+}
+
+.btn-volver:hover {
+    background-color: #a52a2a;
+}
+
+.feliz {
+    margin-top: 40px;
+    color: #8b0000;
+    font-family: "Agbalumo", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    width: 85%;
+    max-width: 900px;
+    font-size: 22px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: 400px;
+}
+
+.video-derecha {
+    width: 350px !important;     
+    margin-left: auto !important; 
+    margin-right: 300px !important; /* <--- ¡Aumenta este número (ej. 80px o 100px) para separarlo del borde y meterlo más hacia adentro! */
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.video-derecha video {
+    width: 100% !important;
+    height: auto !important;
+    display: block;
+    border-radius: 8px;
+    border: 4px solid #8b0000;          
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); 
+}
+
+.titulo2 {
+margin-top: 80px;
+    color: #8b0000;
+    text-align: center;
+    font-family: "Agbalumo", system-ui;
+    font-size: 28px;
+    padding: 15px 30px;
+    border-radius: 10px;
+    
+    /* Fondo corregido y adaptado */
+    background-image: url(https://i.pinimg.com/736x/a5/88/05/a58805259812f8cd3207fd7e1c7502aa.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ }
+
+/* Posiciona el botón de Volver arriba a un costado de forma elegante */
+#hoja-2 .btn-volver {
+    position: absolute;
+    top: 30px;
+    right: 50px;
+    margin-top: 0;
+    z-index: 10;
+}
+
+/* Aseguramos que #hoja-2 sea relative para que el botón se ubique respecto a él */
+#hoja-2 {
+    position: relative;
+    background-image: url(https://i.pinimg.com/736x/88/51/fe/8851fefe686294bab399732aee7006cb.jpg);
+    background-repeat: repeat-y;
+    background-size: 100% auto;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 50px; /* Espacio al final para que respire bonito */
+}
+
+/* 1. Aleja todo el contenedor de las fotos más hacia la izquierda */
+.galeria-contenedor {
+    display: flex;
+    justify-content: flex-start; /* Alinea todo el contenido hacia la izquierda */
+    align-items: flex-start;
+    width: 95%;
+    max-width: 1200px;
+    margin-top: 20px;
+    margin-left: 40px;          /* <--- ¡Aquí lo empujas más hacia la izquierda! (puedes subir o bajar este número) */
+    gap: 60px;                  /* Espacio entre el bloque de fotos y el futuro espacio del QR */
+}
+
+/* 2. Separa más las fotos entre ellas (tanto horizontal como verticalmente) */
+.grupo-imagenes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 120px;                  /* <--- ¡Aumenta este número para que las 4 fotos se separen más entre sí! */
+    max-width: 700px;
+}
+
+.tarjeta-foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* ¡Imágenes más grandes para que abarquen todo el espacio hacia abajo! */
+.tarjeta-foto img {
+    width: 290px !important;              
+    height: 220px !important;             
+    object-fit: cover;                    
+    border-radius: 12px;                  /* Esquinas un poco más redondeadas y suaves */
+    
+    /* El marco con líneas separadas (puedes cambiar 'dashed' por 'dotted' si prefieres puntitos) */
+    border: 3px dashed #ffb6c1 !important;   /* Un borde rosado tierno en guiones */
+    
+    /* El efecto difuminado o sombrita suave de rosales / rosado alrededor */
+    box-shadow: 0 0 12px rgba(255, 182, 193, 0.8), 0 4px 10px rgba(0,0,0,0.1); 
+}
+
+.texto-foto {
+ margin-top: 10px;
+font-family: "Montserrat", sans-serif;
+font-optical-sizing: auto;
+font-weight: <weight>;
+font-style: normal;
+font-size: 15px;
+    
+    color: #380b0b; 
+    
+    /* 2. Estilo de fondo opcional para el texto (una cajita suave o difuminada) */
+    background-color: rgba(255, 240, 245, 0.8); 
+    padding: 5px 12px;                          /* Espacio interno para que el texto no quede pegado a los bordes */
+    border-radius: 8px;                         /* Esquinas redondeadas para la cajita del texto */
+    border: 1px dashed #ffb6c1;                 /* Un borde sutil de líneas separadas combinando con tu marco */
+    
+    /* Opcional: si quieres que el texto esté centrado y ordenado debajo de la foto */
+    display: inline-block;
+}
+
+.grupo-qr-1 {
+    position: absolute;
+    top: 20px;                 /* Altura arriba */
+    right: 70px;               /* 👈 Cambiamos a 20px para meterlo más a la izquierda y que NO se corte */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* SEGUNDO QR (Separado hacia abajo y alineado al primero) */
+.grupo-qr-2 {
+    position: absolute;
+    top: 480px;                /* 👈 Subimos este número a 480px para SEPARARLO BASTANTE del de arriba */
+    right: 20px;               /* La misma alineación para que queden parejitos */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/* Mantén las imágenes y texto con el tamaño grande que te gustó */
+.imagen-qr {
+    width: 300px !important;
+    height: auto !important;
+    border-radius: 8px;
+    border: 3px solid #8b0000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texto-qr {
+     font-family: "Henny Penny", system-ui;
+  font-weight: 400;
+  font-style: normal;
+    font-size: 45px;
+    color: #8b0000;
+    margin-bottom: 10px;
+}

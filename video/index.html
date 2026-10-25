@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GOTY, MYBESTFRIEND 21!</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- PRIMERA HOJA -->
+    <div id="hoja-1" class="hoja">
+        <div class="titulo">
+            <h1>MY BEST FRIEND !!</h1>
+        </div>
+        <div class="pa1">
+            <p>Es 25 de octubre; no recuerdo cuántos cumpleaños he estado presente contigo, porque sabes que no siempre fue tan lineal todo...</p>
+            <p>Somos unos alborotados e incesantes, pero que permanecen al final ahí juntos. Al menos eso quiero creer.</p>
+            <p>Sé que tu cumpleaños no es algo que te emocione, me lo has dejado claro a lo largo de estos últimos días.</p>
+            <p>Aun así no se puede evitar emocionarse por algo así viniendo de alguien a quien aprecias de tal forma como yo a ti.</p>
+            <p>Realmente no es mucho lo que estoy haciendo, porque quisiera darte más,</p>
+            <p>pero sé que eso quizás te pondría incómodo o en una situación en la que no habías pedido estar.</p>
+            <p>Esta es mi forma de decirte lo mucho que agradezco que estés aquí conmigo y permaneciendo en este mundo.</p>
+        </div>
+        <div class="feliz">
+        <h2> A s í q u e, l o ú l t i m o q u e p u e d o d e c i r t e e s: </h2>
+        </div>
+<div class="video-derecha">
+    <video src="video/cumplegato.mp4" controls loop></video>
+</div>
+        <!-- Al hacer clic en la imagen te lleva a la hoja 2 -->
+        <div class="kotonita">
+            <a href="javascript:void(0)" onclick="cambiarHoja('hoja-2')">
+                <img src="img/kotonechibi.png" alt="kotonita" class="imagen-animada">
+            </a>
+        </div>
+    </div>
+
+    <!-- SEGUNDA HOJA (Oculta al inicio) -->
+   <div id="hoja-2" class="hoja" style="display: none;">
+    <div class="titulo2">
+        <h1> Us, if we were... </h1>
+    </div>
+    
+    <div class="galeria-contenedor">
+        
+        <!-- COLUMNA IZQUIERDA Y CENTRO: Las 4 imágenes con sus textos -->
+        <div class="grupo-imagenes">
+            
+            <!-- Imagen 1 (Izquierda - Arriba) -->
+            <div class="tarjeta-foto">
+                <img src="img/descarga (5).jpg" alt="Foto 1">
+                <p class="texto-foto"> My twin y yo si viviéramos en el mundo de South Park: uno al borde de un ataque de nervios y el otro soportandolo y manteniendo la calma hasta que explote tambien y nos agarremos a cocasos</p>
+            </div>
+
+            <!-- Imagen 2 (Izquierda - Abajo) -->
+            <div class="tarjeta-foto">
+                <img src="img/Renga ! ೃ ✿𓈒ॱ⬭ᩙ.jpg" alt="Foto 2">
+                <p class="texto-foto">Estos dos me recuerdan mucho a nosotros. Su amistad siempre me ha evocado la nuestra, incluso con las inseguridades de cada uno. Además, la vimos juntos asi que lo hace mas nuestro ^◡^ </p>
+            </div>
+
+            <!-- Imagen 3 (Derecha del bloque - Arriba) -->
+            <div class="tarjeta-foto">
+                <img src="img/NO_ 6 !!!! (_≧_▽_≦_).jpg" alt="Foto 3">
+                <p class="texto-foto">Estos dos gays, siempre, forever. Siempre seamos nosotros, hasta que alguien llegue a ti y logre hacerte sentir como me haces sentir</p>
+            </div>
+
+            <!-- Imagen 4 (Derecha del bloque - Abajo) -->
+            <div class="tarjeta-foto">
+                <img src="img/@BwsprMd82 - twitter.jpg" alt="Foto 4">
+                <p class="texto-foto">Por cierto: la razón principal por la que los puse fue más por ti que por mí. Seríamos nosotros en el mundo de Persona 4: uno parlanchín y tonto, y el otro más sereno y relajado pero igual de tonto. Escaparíamos juntos de las sombras que nos quieran pepatear.</p>
+            </div>
+
+        </div>
+
+        <div class="grupo-qr-1">
+            <p class="texto-qr">Escanea esto</p>
+            <img src="img/ITSYOUGOTY!!.png" alt="Código QR" class="imagen-qr">
+        </div>
+
+    </div>
+<div class="grupo-qr-2">
+    <p class="texto-qr">No te olvides de mi!!</p>
+    <img src="img/secret¿.png" alt="QR 2" class="imagen-qr">
+</div>
+</div>
+
+ <!-- Aquí agregas el audio -->
+    <audio id="musica-hoja2" src="audio/Pedro Infante - Cien Años (Letra Lyrics).mp3" loop preload="auto"></audio>
+
+    <!-- El script lo ponemos al final del body para asegurar que cargue bien -->
+    <script src="js/script.js"></script>
+</body>
+</html>
